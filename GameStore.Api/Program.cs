@@ -54,7 +54,7 @@ app.MapPost("games", (CreateGameDto newGame) =>
 
     games.Add(game);
 
-    return Results.CreatedAtRoute(GateGameEndPointName, new{id =game.Id}, game);
+    return Results.CreatedAtRoute(GateGameEndPointName, new{id =game.Id}, game);// this the environment
 } 
 );
 
